@@ -110,6 +110,40 @@ CNPJ.generate({ formatted: true, alphanumeric: true }); // 'AB.3DE.5GH/0001-95'
 
 ---
 
+### 🔤 TextCase — String Case Converter
+
+Convert strings between any common case format, with support for space-separated, camelCase, PascalCase, snake_case, and kebab-case inputs.
+
+```ts
+import { TextCase } from 'cs-lab-kit';
+
+TextCase.camelCase('hello world'); // 'helloWorld'
+TextCase.pascalCase('hello_world'); // 'HelloWorld'
+TextCase.snakeCase('helloWorld'); // 'hello_world'
+TextCase.kebabCase('HelloWorld'); // 'hello-world'
+TextCase.constantCase('hello world'); // 'HELLO_WORLD'
+TextCase.titleCase('hello world'); // 'Hello World'
+TextCase.uppercase('hello'); // 'HELLO'
+TextCase.lowercase('HELLO'); // 'hello'
+TextCase.invertText('hello'); // 'olleh'
+TextCase.removeAccents('café'); // 'cafe'
+```
+
+| Method          | Signature                  | Description                                |
+| --------------- | -------------------------- | ------------------------------------------ |
+| `camelCase`     | `(text: string) => string` | Converts to camelCase                      |
+| `pascalCase`    | `(text: string) => string` | Converts to PascalCase                     |
+| `snakeCase`     | `(text: string) => string` | Converts to snake_case                     |
+| `kebabCase`     | `(text: string) => string` | Converts to kebab-case                     |
+| `constantCase`  | `(text: string) => string` | Converts to CONSTANT_CASE                  |
+| `titleCase`     | `(text: string) => string` | Converts to Title Case                     |
+| `uppercase`     | `(text: string) => string` | Converts to UPPERCASE                      |
+| `lowercase`     | `(text: string) => string` | Converts to lowercase                      |
+| `invertText`    | `(text: string) => string` | Reverses the characters of the string      |
+| `removeAccents` | `(text: string) => string` | Removes diacritics/accents from the string |
+
+---
+
 ## 🔭 Roadmap
 
 These features are actively planned and will be released as stable modules:
@@ -127,11 +161,10 @@ These features are actively planned and will be released as stable modules:
 
 ### 💱 Converters
 
-| Feature    | Description                                                                             |
-| ---------- | --------------------------------------------------------------------------------------- |
-| `Currency` | Real-time currency conversion between multiple currencies                               |
-| `JSON`     | Formatter, minifier and prettifier for JSON strings                                     |
-| `TextCase` | Convert between `UPPER`, `lower`, `PascalCase`, `camelCase`, `kebab-case`, `snake_case` |
+| Feature    | Description                                               |
+| ---------- | --------------------------------------------------------- |
+| `Currency` | Real-time currency conversion between multiple currencies |
+| `JSON`     | Formatter, minifier and prettifier for JSON strings       |
 
 ### 🔒 Security & Encoding
 
@@ -146,7 +179,7 @@ These features are actively planned and will be released as stable modules:
 ## 🚀 Quick Start
 
 ```ts
-import { CPF, CNPJ } from 'cs-lab-kit';
+import { CPF, CNPJ, TextCase } from 'cs-lab-kit';
 
 // Generate test data for your test suite
 const cpf = CPF.generate(true); // '987.654.321-00'
@@ -161,6 +194,11 @@ function validateDocument(doc: string) {
 
 // Normalize before saving to database
 const raw = CPF.clean('123.456.789-09'); // '12345678909'
+
+// Convert strings between case formats
+TextCase.camelCase('hello world'); // 'helloWorld'
+TextCase.snakeCase('helloWorld'); // 'hello_world'
+TextCase.kebabCase('HelloWorld'); // 'hello-world'
 ```
 
 ---
