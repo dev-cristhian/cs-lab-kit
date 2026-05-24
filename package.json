@@ -1,6 +1,6 @@
 {
   "name": "cs-lab-kit",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "A utility toolkit for JavaScript and TypeScript — data generators, validators, and more.",
   "keywords": [
     "cpf",
