@@ -203,25 +203,4 @@ TextCase.kebabCase('HelloWorld'); // 'hello-world'
 
 ---
 
-## 🛠️ Scripts
-
-| Command                 | Description                    |
-| ----------------------- | ------------------------------ |
-| `npm run build`         | Build for production           |
-| `npm run test`          | Run all tests                  |
-| `npm run test:coverage` | Run tests with coverage report |
-| `npm run lint`          | Lint source files              |
-| `npm run format`        | Format source files            |
-
----
-
-## Requirements
-
-- Node.js `>= 18`
-- Works with ESM and CommonJS
-
----
-
-## License
-
 [MIT](./LICENSE) © [Cristhian Santos](https://github.com/dev-cristhian)
