@@ -1,8 +1,15 @@
 {
   "name": "cs-lab-kit",
   "version": "1.0.0",
-  "description": "",
-  "keywords": [],
+  "description": "A utility toolkit for JavaScript and TypeScript — data generators, validators, and more.",
+  "keywords": [
+    "toolkit",
+    "utils",
+    "typescript",
+    "javascript",
+    "validators",
+    "generators"
+  ],
   "author": "Cristhian Santos",
   "license": "MIT",
   "type": "module",
