@@ -14,6 +14,10 @@ Validate, format, generate and transform Brazilian documents, credit cards, stri
 
 </div>
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/dev-cristhian/cs-lab-kit/main/assets/banner.jpg" alt="cs-lab-kit" width="100%" style="max-width: 900px;" />
+</p>
+
 ---
 
 ## What is Lab Kit?
