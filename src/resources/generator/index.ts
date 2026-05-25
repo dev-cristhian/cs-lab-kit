@@ -99,15 +99,15 @@ export class Generator {
    *
    * @param options - Password configuration options.
    * @param options.length - Number of characters (default: `12`).
-   * @param options.uppercase - Include uppercase letters (default: `true`).
-   * @param options.lowercase - Include lowercase letters (default: `true`).
-   * @param options.numbers - Include numeric digits (default: `true`).
+   * @param options.uppercase - Include uppercase letters (default: `false`).
+   * @param options.lowercase - Include lowercase letters (default: `false`).
+   * @param options.numbers - Include numeric digits (default: `false`).
    * @param options.symbols - Include symbol characters (default: `false`).
    * @returns A password string.
    * @throws {Error} When no character type is enabled.
    * @example
-   * Generator.password(); // 'aB3kR9mXpQ1w'
-   * Generator.password({ length: 8, symbols: true }); // 'aB3k@9m!'
+   * Generator.password({ lowercase: true }); // 'xkqmrvtaepwz'
+   * Generator.password({ length: 8, uppercase: true, symbols: true }); // 'aB3k@9m!'
    */
   public static password(options?: IPasswordOptions): string {
     const length = options?.length ?? 12;
