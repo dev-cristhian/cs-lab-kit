@@ -4,6 +4,7 @@ export { CNPJ } from './resources/cnpj';
 export { CPF } from './resources/cpf';
 export { CreditCard } from './resources/credit-card';
 export { Generator } from './resources/generator';
+export { JWT } from './resources/jwt';
 export { LicensePlate } from './resources/license-plate';
 export { TextCase } from './resources/text-case';
 
