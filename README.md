@@ -11,6 +11,7 @@ Validate, format, generate and transform Brazilian documents, credit cards, stri
 [![license](https://img.shields.io/npm/l/cs-lab-kit?color=blue&style=flat-square)](./LICENSE)
 [![node](https://img.shields.io/node/v/cs-lab-kit?color=green&style=flat-square)](https://nodejs.org)
 [![types](https://img.shields.io/npm/types/cs-lab-kit?style=flat-square)](https://www.typescriptlang.org)
+[![coverage](https://codecov.io/gh/dev-cristhian/cs-lab-kit/branch/main/graph/badge.svg)](https://codecov.io/gh/dev-cristhian/cs-lab-kit)
 
 </div>
 
