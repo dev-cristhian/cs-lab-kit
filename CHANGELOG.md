@@ -1,5 +1,11 @@
 # cs-lab-kit
 
+## 1.3.1
+
+### Patch Changes
+
+- 0415eaf: Update README.md with test coverage badge.
+
 ## 1.3.0
 
 ### Minor Changes
